@@ -20,7 +20,7 @@ for i in range (0 , 3):		#Counts number of unknowns
 		sidesUnknown = sidesUnknown - 1
 	
 #If degrees are wanted / inputed, puts into radians
-if (degOrRad == "Degrees" | degOrRad == "degrees" | degOrRad == "d"):
+if ((degOrRad is "Degrees") | (degOrRad is "degrees") | (degOrRad is "d")):
 	for i in range(0, 3):
 		if angles[i] != -1:
 			angles[i] = math.radians(angles[i])
@@ -106,7 +106,7 @@ if anglesUnknown == 2:
 			sides[2] = (sides[0]**2 + sides[1]**2 - (2 * sides[0] * sides[1] * math.cos(angles[2])))**0.5
 
 #If degrees is wanted / inputed converts to degrees	
-if (degOrRad == "Degrees" | degOrRad == "degrees" | degOrRad == "d"):
+if ((degOrRad is "Degrees") | (degOrRad is "degrees") | (degOrRad is "d")):
 	for i in range(0, 3):
 		if angles[i] != -1:
 			angles[i] = math.degrees(angles[i])
